@@ -10,6 +10,17 @@ public class Pessoa {
     private LocalDate nascimento;
     private BigDecimal salario;
 
+    // Construtor padrão
+    public Pessoa() { }
+    // Construtor parametrizado
+    public Pessoa(String nome, String endereco, LocalDate nascimento, BigDecimal salario) {
+        this.nome = nome;
+        this.endereco = endereco;
+        this.nascimento = nascimento;
+        this.salario = salario;
+    }
+
+
     public String getNome() { return nome; }
     public void setNome(String nome) { this.nome = nome; }
     public String getEndereco() { return endereco; }
