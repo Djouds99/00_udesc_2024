@@ -20,5 +20,10 @@ public class ProgramaPrincipal {
                 new BigDecimal("1234.56")
         );
         beltrano.apresentarse();
+
+        System.out.println();
+        System.out.println(fulano);
+        System.out.println(beltrano);
+
     }
 }

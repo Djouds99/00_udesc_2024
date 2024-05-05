@@ -36,4 +36,14 @@ public class Pessoa {
         System.out.println("Nascimento: " + this.nascimento);
         System.out.println("Salário...: " + this.salario);
     }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", endereco='" + endereco + '\'' +
+                ", nascimento=" + nascimento +
+                ", salario=" + salario +
+                '}';
+    }
 }
