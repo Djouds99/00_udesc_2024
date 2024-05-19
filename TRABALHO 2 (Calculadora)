@@ -1,0 +1,57 @@
+public class Calculadora {
+        private int num1;
+        private int num2;
+        private int resultado;
+
+        // Construtor completo
+        public Calculadora(int num1, int num2) {
+            this.num1 = num1;
+            this.num2 = num2;
+        }
+
+        // Método para somar na calculadora
+        public void somar() {
+            resultado = num1 + num2;
+            System.out.println("Soma: " + resultado);
+        }
+
+        // Método para subtrair na calculadoea
+        public void subtrair() {
+            resultado = num1 - num2;
+            System.out.println("Subtração: " + resultado);
+        }
+
+        // Método para multiplicar na calculadora
+        public void multiplicar() {
+            resultado = num1 * num2;
+            System.out.println("Multiplicação: " + resultado);
+        }
+
+        // Método para dividir na calculdra
+        public void dividir() {
+            if (num2 != 0) {
+                resultado = num1 / num2;
+                System.out.println("Divisão: " + resultado);
+            } else {
+                System.out.println("Erro: Divisão por zero não é permitida.");
+            }
+        }
+    public static void main(String[] args) {
+        // Esses são os testes com 40 e 2
+        Calculadora calc1 = new Calculadora(40, 2);
+        System.out.println("Teste com (40, 2):");
+        calc1.somar();
+        calc1.subtrair();
+        calc1.multiplicar();
+        calc1.dividir();
+        System.out.println();
+        
+        Calculadora calc2 = new Calculadora(40, 0);
+        System.out.println("Teste com (40, 0):");
+        calc2.somar();
+        calc2.subtrair();
+        calc2.multiplicar();
+        calc2.dividir();
+    }
+
+}
