@@ -50,3 +50,4 @@ public class Veiculo {
     public void exibirCor() {
         System.out.println("A cor do veículo é: " + this.cor);
     }
+.
