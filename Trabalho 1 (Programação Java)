@@ -1,0 +1,106 @@
+Questão 1
+import java.util.Scanner;
+
+public class SucessorAntecessor {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita ao usuário que insira um número inteiro
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        // Calcula o sucessor e o antecessor
+        int sucessor = numero + 1;
+        int antecessor = numero - 1;
+
+        // Exibe o sucessor e o antecessor
+        System.out.println("O sucessor de " + numero + " é: " + sucessor);
+        System.out.println("O antecessor de " + numero é: " + antecessor);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+
+Questão 2
+import java.util.Scanner;
+
+public class ConsumoVeiculo {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita ao usuário que insira a distância percorrida em quilômetros
+        System.out.print("Digite a distância percorrida (em km): ");
+        int distancia = scanner.nextInt();
+
+        // Solicita ao usuário que insira o total de combustível gasto em litros
+        System.out.print("Digite o total de combustível gasto (em litros): ");
+        double combustivel = scanner.nextDouble();
+
+        // Calcula a média de consumo do veículo (km por litro)
+        double consumoMedio = distancia / combustivel;
+
+        // Exibe a média de consumo do veículo
+        System.out.printf("A média de consumo do veículo é: %.2f km/l%n", consumoMedio);
+
+        scanner.close();
+    }
+}
+
+Questão 3
+import java.util.Scanner;
+
+public class CompararNumeros {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita ao usuário que insira o primeiro número
+        System.out.print("Digite o primeiro número: ");
+        int numero1 = scanner.nextInt();
+
+        // Solicita ao usuário que insira o segundo número
+        System.out.print("Digite o segundo número: ");
+        int numero2 = scanner.nextInt();
+
+        // Compara os dois números e exibe o resultado
+        if (numero1 > numero2) {
+            System.out.println("O maior número é: " + numero1);
+        } else if (numero2 > numero1) {
+            System.out.println("O maior número é: " + numero2);
+        } else {
+            System.out.println("Os números são iguais.");
+        }
+
+        scanner.close();
+    }
+}
+
+Questão 4
+import java.util.Scanner;
+
+public class IdentificarSexo {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita ao usuário que insira o sexo (M ou F)
+        System.out.print("Digite o sexo (M ou F): ");
+        char sexo = scanner.next().charAt(0);
+
+        // Verifica e exibe o sexo correspondente
+        if (sexo == 'M' || sexo == 'm') {
+            System.out.println("Sexo: Masculino");
+        } else if (sexo == 'F' || sexo == 'f') {
+            System.out.println("Sexo: Feminino");
+        } else {
+            System.out.println("Entrada inválida. Digite M ou F.");
+        }
+
+        scanner.close();
+    }
+}
+
